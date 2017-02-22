@@ -1,0 +1,92 @@
+body {
+    padding: 0;
+    background-color: #fafafa;
+    text-shadow: 1px 1px #d1d1d1;
+
+}
+
+div#body {
+    width: 100%;
+    clear: both;
+
+    margin: 10px 5px 10px 5px;
+    animation-name: show-sidebar;
+    animation-duration: 1s;
+}
+@keyframes show-sidebar {
+    0%   {opacity: 0}
+    15%  {opacity: 0.2}
+    35%  {opacity: 0.4}
+    55% {opacity: 0.6}
+    75% {opacity: 0.8}
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+@keyframes hide-sidebar {
+    0%   {opacity: 1}
+    15%  {opacity: 0.8}
+    35%  {opacity: 0.6}
+    55% {opacity: 0.4}
+    75% {opacity: 0.2}
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+    div#body div#sidebar {
+        position: fixed;
+        left: 5px;
+        top: 10px;
+        bottom: 10px;
+
+        float: left;
+        width: 20%;
+
+        border-right: 1px solid rgba(50, 50, 50, 0.6);
+
+    }
+
+        div#sidebar div#header {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        div#sidebar div#menu {
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+            div#menu div.item {
+                cursor: pointer;
+                text-align: center;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                margin-bottom: 5px;
+                min-height: 25px;
+                padding-top: 5px;
+            }
+
+        div#sidebar div#footer {
+            text-align: center;
+            font-size: 11px;
+            color: #4b4b4b;
+
+            text-shadow: none;
+        }
+
+    div#body div#content {
+        width: 75%;
+        margin-left: 22%;
+        overflow: hidden;
+    }
+
+        div#content div {
+            display: none;
+        }
+
+        div#content div#about-mma-content {
+            display: block;
+        }
