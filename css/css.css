@@ -1,7 +1,8 @@
 body {
     padding: 0;
-    background-color: #fafafa;
-    text-shadow: 1px 1px #d1d1d1;
+    background-color: #120008;
+    text-shadow: 1px 1px 1px #aaa;
+    font-family: 'Kanit', serif;
 
 }
 
@@ -37,8 +38,8 @@ div#body {
 }
     div#body div#sidebar {
         position: fixed;
-        left: 5px;
-        top: 10px;
+        left: 0px;
+        top: 0px;
         bottom: 10px;
 
         float: left;
@@ -46,24 +47,31 @@ div#body {
 
         border-right: 1px solid rgba(50, 50, 50, 0.6);
 
-    }
+    z-index: 4;
+
+    height: 100%;
+    background: #191919;
+        color: #fafafa;
+}
+
 
         div#sidebar div#header {
             text-align: center;
             font-size: 25px;
         }
 
-        div#sidebar div#menu {
+        div#sidebar nav#menu {
             margin-right: 5px;
             margin-top: 10px;
             margin-bottom: 10px;
+            font-family: 'Josefin Sans', serif;
+
         }
 
-            div#menu div.item {
+            nav#menu div.item {
                 cursor: pointer;
                 text-align: center;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
+
                 margin-bottom: 5px;
                 min-height: 25px;
                 padding-top: 5px;
@@ -81,6 +89,8 @@ div#body {
         width: 75%;
         margin-left: 22%;
         overflow: hidden;
+        text-shadow: 1px 1px #d1d1d1;
+
     }
 
         div#content div {
