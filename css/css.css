@@ -1,11 +1,13 @@
+@media only screen and (min-width: 1290px){
 body {
-    padding: 0;
-    background-color: #120008;
-    text-shadow: 1px 1px 1px #aaa;
-    font-family: 'Kanit', serif;
-    margin: 0;
-    overflow-x: hidden;
-}
+
+        padding: 0;
+        background-color: #120008;
+        text-shadow: 1px 1px 1px #aaa;
+        font-family: 'Kanit', serif;
+        margin: 0;
+        overflow-x: hidden;
+    }
 
 div#body {
     width: 100%;
@@ -126,3 +128,16 @@ div#body div#content {
     div#content div#about-mma-content {
         display: block;
     }
+}
+
+@media only screen and (max-width: 500px){
+    body {
+
+        padding: 0;
+        background-color: #ff00a9;
+        text-shadow: 1px 1px 1px #aaa;
+        font-family: 'Kanit', serif;
+        margin: 0;
+        overflow-x: hidden;
+    }
+}
