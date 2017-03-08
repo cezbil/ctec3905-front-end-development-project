@@ -1,37 +1,64 @@
 
+var delayTime = 900; // tu zawsze o 100ms mniej ni w CSS
+
 function hideElement(ele) {
-    ele.style.display = "none";
+    setTimeout(function() {
+        ele.style.display = "none";
+    }, delayTime);
+}
+
+function showElement(ele) {
+    setTimeout(function() {
+        ele.style.display = "block";
+    }, delayTime);
 }
 
 function changeContent(option) {
     var contentChildrens = document.getElementById("content").getElementsByTagName("div");
-
+    var hideTime = "1s"; // CSS czas
+    var showTime = hideTime;
+    var hideAnimation = "hide-sidebar";
+    var showAnimation = "show-sidebar";
 
     for(var i = 0; i < contentChildrens.length; i++) {
-        contentChildrens[i].style.animationDuration = "4s";
-        contentChildrens[i].style.animationName = "hide-sidebar";
+        hideElement(contentChildrens[i]);
+        contentChildrens[i].style.animationDuration = hideTime;
+        contentChildrens[i].style.animationName = hideAnimation;
     }
 
     if(option == "about-mma") {
-        document.getElementById("about-mma-content").style.display = "block";
+        showElement(document.getElementById("about-mma-content"));
+        document.getElementById("about-mma-content").style.animationDuration = showTime;
+        document.getElementById("about-mma-content").style.animationName = showAnimation;
     }
     else if(option == "boxing") {
-       document.getElementById("boxing-content").style.animationDuration = "4s";
-        document.getElementById("boxing-content").style.animationName = "show-sidebar";
+        showElement(document.getElementById("boxing-content"));
+        document.getElementById("boxing-content").style.animationDuration = showTime;
+        document.getElementById("boxing-content").style.animationName = showAnimation;
     }
     else if(option == "jiujitsu") {
-        document.getElementById("jiujitsu-content").style.display = "block";
+        showElement(document.getElementById("jiujitsu-content"));
+        document.getElementById("jiujitsu-content").style.animationDuration = showTime;
+        document.getElementById("jiujitsu-content").style.animationName = showAnimation;
     }
     else if(option == "muay-thai") {
-        document.getElementById("muay-thai-content").style.display = "block";
+        showElement(document.getElementById("muay-thai-content"));
+        document.getElementById("muay-thai-content").style.animationDuration = showTime;
+        document.getElementById("muay-thai-content").style.animationName = showAnimation;
     }
     else if(option == "karate") {
-        document.getElementById("karate-content").style.display = "block";
+        showElement(document.getElementById("karate-content"));
+        document.getElementById("karate-content").style.animationDuration = showTime;
+        document.getElementById("karate-content").style.animationName = showAnimation;
     }
     else if(option == "judo") {
-        document.getElementById("judo-content").style.display = "block";
+        showElement(document.getElementById("judo-content"));
+        document.getElementById("judo-content").style.animationDuration = showTime;
+        document.getElementById("judo-content").style.animationName = showAnimation;
     }
     else if(option == "wrestling") {
-        document.getElementById("wrestling-content").style.display = "block";
+        showElement(document.getElementById("wrestling-content"));
+        document.getElementById("wrestling-content").style.animationDuration = showTime;
+        document.getElementById("wrestling-content").style.animationName = showAnimation;
     }
 };
