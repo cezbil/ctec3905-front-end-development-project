@@ -8,6 +8,125 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+div#body {
+    width: 100%;
+    clear: both;
+
+    margin-bottom: 10px;
+    margin-left: 5px;
+    animation-name: show-sidebar;
+    animation-duration: 1s;
+    overflow: hidden;
+}
+
+@keyframes show-sidebar {
+    0%   {opacity: 0}
+    15%  {opacity: 0.2}
+    35%  {opacity: 0.4}
+    55% {opacity: 0.6}
+    75% {opacity: 0.8}
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+@keyframes hide-sidebar {
+    0%   {opacity: 1}
+    15%  {opacity: 0.8}
+    35%  {opacity: 0.6}
+    55% {opacity: 0.4}
+    75% {opacity: 0.2}
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+div#body div#sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 10px;
+
+    float: left;
+    width: 20%;
+
+    border-right: 1px solid rgba(50, 50, 50, 0.6);
+
+    z-index: 4;
+
+    height: 100%;
+    background: #191919;
+    color: #fafafa;
+}
+
+
+div#sidebar div#header {
+    text-align: center;
+    font-size: 25px;
+}
+
+div#sidebar nav#menu {
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', serif;
+}
+
+nav#menu div.item {
+    cursor: pointer;
+    text-align: center;
+
+    margin-bottom: 5px;
+    min-height: 25px;
+    padding-top: 5px;
+}
+
+div#sidebar div#footer {
+    text-align: center;
+    font-size: 11px;
+    color: #4b4b4b;
+
+    text-shadow: none;
+}
+
+div#body div#content {
+    width: 100%;
+
+    text-shadow: 1px 1px #1b0008;
+    color: #fafafa;
+}
+
+div#content p.image {
+    padding: 0;
+    margin: 0;
+    margin-left: 19.5%;
+    width: 80.5%;
+    height: 300px;
+    overflow: hidden;
+}
+
+p.image img {
+    width: 100%;
+}
+
+div#content p.text {
+    padding: 0;
+    margin-left: 21%;
+    margin-right: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 76%;
+    text-align: justify;
+}
+
+div#content div {
+    display: none;
+}
+
+div#content div#about-mma-content {
+    display: block;
+}
 @media screen and (min-width: 580px) {
 body {
 
@@ -140,12 +259,3 @@ div#body div#content {
     }
 }
 
-    body {
-
-        padding: 0;
-        background-color: #ff00a9;
-        text-shadow: 1px 1px 1px #aaa;
-        font-family: 'Kanit', serif;
-        margin: 0;
-        overflow-x: hidden;
-    }
