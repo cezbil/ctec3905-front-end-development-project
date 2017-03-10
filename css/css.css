@@ -1,6 +1,12 @@
 
 @media screen and (max-width: 579px) {
+    div#content div {
+        display: none;
+    }
 
+    div#content div#about-mma-content {
+        display: block;
+    }
     section {
 
         margin-left: 20%;
@@ -10,25 +16,25 @@
         max-height: 75px;
         max-width: 75px;
     }
-body {
+    body {
 
-    padding: 0;
-    background-color: #120008;
-    text-shadow: 1px 1px 1px #aaa;
-    font-family: 'Kanit', serif;
-    margin: 0;
-    overflow-x: hidden;
-}
-div#body {
-    width: 100%;
-    clear: both;
+        padding: 0;
+        background-color: #120008;
+        text-shadow: 1px 1px 1px #aaa;
+        font-family: 'Kanit', serif;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    div#body {
+        width: 100%;
+        clear: both;
 
-    margin-bottom: 10px;
-    margin-left: 5px;
-    animation-name: show-sidebar;
-    animation-duration: 1s;
-    overflow: hidden;
-}
+        margin-bottom: 10px;
+        margin-left: 5px;
+        animation-name: show-sidebar;
+        animation-duration: 1s;
+        overflow: hidden;
+    }
     div#body div#content {
         width: 100%;
 
@@ -37,58 +43,58 @@ div#body {
     }
 
 
-div#body div#sidebar {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    bottom: 10px;
+    div#body div#sidebar {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        bottom: 10px;
 
-    float: left;
-    width: 30%;
+        float: left;
+        width: 30%;
 
-    border-right: 1px solid rgba(50, 50, 50, 0.6);
-
-
-    height: 100%;
-    background: #191919;
-    color: #fafafa;
-}
+        border-right: 1px solid rgba(50, 50, 50, 0.6);
 
 
-div#sidebar div#header {
-    text-align: center;
-    font-size: 1em;
-}
-
-div#sidebar nav#menu {
-    margin-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Josefin Sans', serif;
-}
-
-nav#menu div.item {
-    cursor: pointer;
-    text-align: center;
-
-    margin-bottom: 5px;
-    min-height: 25px;
-    padding-top: 5px;
-}
-
-div#sidebar div#footer {
-    text-align: center;
-    font-size: 11px;
-    color: #4b4b4b;
-
-    text-shadow: none;
-}
-    div#sidebar div#footer p{
-     display: none;
+        height: 100%;
+        background: #191919;
+        color: #fafafa;
     }
-div#content p.image {
-   display: none;
-}
+
+
+    div#sidebar div#header {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    div#sidebar nav#menu {
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Josefin Sans', serif;
+    }
+
+    nav#menu div.item {
+        cursor: pointer;
+        text-align: center;
+
+        margin-bottom: 5px;
+        min-height: 25px;
+        padding-top: 5px;
+    }
+
+    div#sidebar div#footer {
+        text-align: center;
+        font-size: 11px;
+        color: #4b4b4b;
+
+        text-shadow: none;
+    }
+    div#sidebar div#footer p{
+        display: none;
+    }
+    div#content p.image {
+        display: none;
+    }
 
 
 
@@ -96,11 +102,11 @@ div#content p.image {
     div#content p.text {
         padding: 0;
         margin-left: 31%;
-        margin-right: 10%;
+        margin-right: 50%;
         margin-top: 10px;
         margin-bottom: 10px;
-        width: 76%;
-        text-align: justify;
+        width: 69%;
+        text-align: left;
     }
 
 }
@@ -110,7 +116,7 @@ div#content p.image {
 @media screen and (min-width: 580px) {
 
 
-body {
+    body {
 
         padding: 0;
         background-color: #120008;
@@ -120,73 +126,73 @@ body {
         overflow-x: hidden;
     }
 
-div#body {
-    width: 100%;
-    clear: both;
+    div#body {
+        width: 100%;
+        clear: both;
 
-    margin-bottom: 10px;
-    margin-left: 5px;
-    animation-name: show-sidebar;
-    animation-duration: 1s;
-    overflow: hidden;
-}
-
-
-div#body div#sidebar {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    bottom: 10px;
-
-    float: left;
-    width: 20%;
-
-    border-right: 1px solid rgba(50, 50, 50, 0.6);
-
-    z-index: 4;
-
-    height: 100%;
-    background: #191919;
-    color: #fafafa;
-}
+        margin-bottom: 10px;
+        margin-left: 5px;
+        animation-name: show-sidebar;
+        animation-duration: 1s;
+        overflow: hidden;
+    }
 
 
-div#sidebar div#header {
-    text-align: center;
-    font-size: 25px;
-}
+    div#body div#sidebar {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        bottom: 10px;
 
-div#sidebar nav#menu {
+        float: left;
+        width: 20%;
 
-    margin-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Josefin Sans', serif;
-}
+        border-right: 1px solid rgba(50, 50, 50, 0.6);
 
-nav#menu div.item {
-    cursor: pointer;
-    text-align: center;
+        z-index: 4;
 
-    margin-bottom: 5px;
-    min-height: 25px;
-    padding-top: 5px;
-}
+        height: 100%;
+        background: #191919;
+        color: #fafafa;
+    }
 
-div#sidebar div#footer {
-    text-align: center;
-    font-size: 11px;
-    color: #4b4b4b;
 
-    text-shadow: none;
-}
+    div#sidebar div#header {
+        text-align: center;
+        font-size: 25px;
+    }
 
-div#body div#content {
-    width: 100%;
+    div#sidebar nav#menu {
 
-    text-shadow: 1px 1px #1b0008;
-    color: #fafafa;
-}
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Josefin Sans', serif;
+    }
+
+    nav#menu div.item {
+        cursor: pointer;
+        text-align: center;
+
+        margin-bottom: 5px;
+        min-height: 25px;
+        padding-top: 5px;
+    }
+
+    div#sidebar div#footer {
+        text-align: center;
+        font-size: 11px;
+        color: #4b4b4b;
+
+        text-shadow: none;
+    }
+
+    div#body div#content {
+        width: 100%;
+
+        text-shadow: 1px 1px #1b0008;
+        color: #fafafa;
+    }
 
     div#content p.image {
         padding: 0;
@@ -209,7 +215,7 @@ div#body div#content {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 76%;
-        text-align: justify;
+        text-align: left;
     }
 
     div#content div {
@@ -264,9 +270,5 @@ div#body div#content {
 
 
 
-@media screen and (min-width: 700px) {
-    section {
-        margin-left: 20%;
-    }
 
-}
+
