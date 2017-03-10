@@ -1,117 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8" />
 
-        <meta name="author" content="Cezary Bilda" />
-        <meta name="description" content="Opis strony jakis" />
-        <meta name="keywords" content="kluczowe, slowa, po, przecinku" />
+    <meta name="author" content="Cezary Bilda" />
+    <meta name="description" content="Opis strony jakis" />
+    <meta name="keywords" content="kluczowe, slowa, po, przecinku" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" type="text/css"
-              href="https://fonts.googleapis.com/css?family=Kanit">
-        <link rel="stylesheet" type="text/css"
-              href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Kanit">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 
-        <title>MMA</title>
+    <title>MMA</title>
 
-        <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
 
-        <script src="js/js.js"></script>
-    </head>
-    <body>
-        <div id="body">
-            <div id="sidebar">
-                <div id="header">
-                    Mixed Martial Arts
-                </div>
-                <nav id="menu">
+    <script src="js/js.js"></script>
 
-                    <div class="item" onclick="changeContent('about-mma');">About MMA</div>
-                    <div class="item" onclick="changeContent('boxing');">Boxing</div>
-                    <div class="item" onclick="changeContent('jiujitsu');">jiujitsu</div>
-                    <div class="item" onclick="changeContent('muay-thai');">muay thai</div>
-                    <div class="item" onclick="changeContent('karate');">karate</div>
-                    <div class="item" onclick="changeContent('judo');">judo</div>
-                    <div class="item" onclick="changeContent('wrestling');">wrestling</div>
-                </nav>
-                <div id="footer">
-                    Copyright &copy; Cezary Bilda
-                    <p>
-                        <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcezbil.github.io%2Fctec3905-front-end-development-project%2F&profile=css3&usermedium=all&warning=1&vextwarning=">
-                            <img style="border:0;width:88px;height:31px"
-                                 src="http://jigsaw.w3.org/css-validator/images/vcss"
-                                 alt="Valid CSS!" />
-                        </a>
-                    </p>
-                    <p>
-                        <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcezbil.github.io%2Fctec3905-front-end-development-project%2F&profile=css3&usermedium=all&warning=1&vextwarning=">
-                            <img style="border:0;width:88px;height:31px"
-                                 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                                 alt="Valid CSS!" />
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div id="content">
-                       <div id="about-mma-content">
-                           <p class="image">
-                               <img  src="resources/img/mma-ufc.jpg" alt="mma" />
-                           </p>
-                    <p class="text">
+</head>
+<body>
 
-                    </p>
-                </div>
-                <div id="boxing-content">
-                    <p class="image">
-                        <img src="resources/img/boxing.jpg" alt="boxing" />
-                    </p>
-                    <p class="text">
-                        content2
-                    </p>
-                </div>
-                <div id="jiujitsu-content">
-                    <p class="image">
-                        <img  src="resources/img/bjj.jpg" alt="bjj" />
-                    </p>
-                    <p class="text">
-                    content3
-                    </p>
-                </div>
-                <div id="muay-thai-content">
-                    <p class="image">
-                        <img  src="resources/img/muay-thai.jpg" alt="muay-thai" />
-                    </p>
-                    <p class="text">
-                    content4
-                    </p>
-                </div>
-                <div id="karate-content">
-                    <p class="image">
-                        <img  src="resources/img/karate.jpg" alt="karate" />
-                    </p>
-                    <p class="text">
-                    content5
-                    </p>
-                </div>
-                <div id="judo-content">
-                    <p class="image">
-                        <img  src="resources/img/judo.jpg" alt="judo" />
-                    </p>
-                    <p class="text">
-                    content6
-                    </p>
-                </div>
-                <div id="wrestling-content">
-                    <p class="image">
-                        <img  src="resources/img/wrestling.jpg" alt="wrestling" />
-                    </p>
-                    <p class="text">
-                    content7
-                    </p>
-                </div>
-            </div>
+
+<div id="body">
+    <div id="sidebar">
+        <div id="header">
+            Mixed Martial Arts
         </div>
-    </body>
+        <nav id="menu">
+
+            <div class="item" onclick="changeContent('about-mma');">About MMA</div>
+            <div class="item" onclick="changeContent('boxing');">Boxing</div>
+            <div class="item" onclick="changeContent('jiujitsu');">jiujitsu</div>
+            <div class="item" onclick="changeContent('muay-thai');">muay thai</div>
+            <div class="item" onclick="changeContent('karate');">karate</div>
+            <div class="item" onclick="changeContent('judo');">judo</div>
+            <div class="item" onclick="changeContent('wrestling');">wrestling</div>
+        </nav>
+        <div id="footer">
+            Copyright &copy; Cezary Bilda
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcezbil.github.io%2Fctec3905-front-end-development-project%2F&profile=css3&usermedium=all&warning=1&vextwarning=">
+                    <img style="border:0;width:88px;height:31px"
+                         src="http://jigsaw.w3.org/css-validator/images/vcss"
+                         alt="Valid CSS!" />
+                </a>
+            </p>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcezbil.github.io%2Fctec3905-front-end-development-project%2F&profile=css3&usermedium=all&warning=1&vextwarning=">
+                    <img style="border:0;width:88px;height:31px"
+                         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                         alt="Valid CSS!" />
+                </a>
+            </p>
+        </div>
+    </div>
+    <div id="content">
+
+        <div id="about-mma-content">
+            <p class="image">
+                <img  src="resources/img/mma-ufc.jpg" alt="mma" />
+            </p>
+            <p class="text">
+
+                MMA is my hobby and passion, I enjoy every aspect of the arts, it is very important to me.
+                <br>
+                Mixed martial arts is many different sports put into one, on this website I will try to show you a closer look into few of them.
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Mixed_martial_arts">Here is some information from wikipedia!</a>
+                <br>
+                <br>
+
+                Mixed martial arts (MMA) is a full-contact combat sport that allows both striking and grappling,
+                both standing and on the ground, using techniques from other combat sports and martial arts.
+                The first documented use of the term mixed martial arts was in a review of UFC 1 by television critic Howard Rosenberg in 1993.
+                The term gained popularity when newfullcontact.com, then one of the largest websites covering the sport,
+                hosted and republished the article. The question of who actually coined the term is subject to debate.
+                <br>
+                <br>
+                During the early 20th century, various mixed-style contests took place throughout Japan and the Pacific Rim.
+                In 1980 CV Productions, Inc., created the first regulated MMA league in the United States, named Tough Guy Contest,
+                later renamed Battle of the Superfighters. The company sanctioned ten tournaments in Pennsylvania.
+                However, in 1983 the Pennsylvania State Senate passed a bill prohibiting the sport.
+                <br>
+                <br>
+                In 1993, the Gracie family brought vale tudo,
+                developed in Brazil from the 1920s, to the United States by founding the Ultimate Fighting Championship (UFC)
+                MMA promotion company.
+                <br>
+                <br>
+                Originally promoted as a competition to find the most effective martial arts for real unarmed combat,
+                competitors from different fighting styles were pitted against one another in contests with relatively few rules.
+                Later, individual fighters employed multiple martial arts into their style.
+                MMA promoters were pressured to adopt additional rules to increase competitors' safety,
+                to comply with sport regulations and to broaden mainstream acceptance of the sport.
+                Following these changes, the sport has seen increased popularity with a pay-per-view business
+                that rivals boxing and professional wrestling. ~ from wikipedia
+                <br>
+                <br>
+            </p>
+            <section>
+
+                <img  src="resources/img/mma.jpg" alt="mma" />
+
+
+            </section>
+
+            <section>
+                <img  src="resources/img/mma1.jpg" alt="mma" />
+            </section>
+        </div>
+        <div id="boxing-content">
+            <p class="image">
+                <img src="resources/img/boxing.jpg" alt="boxing" />
+            </p>
+            <p class="text">
+                <a href="https://en.wikipedia.org/wiki/Boxing">Here is some information from wikipedia about boxing!</a>
+
+            </p>
+
+
+
+        </div>
+        <div id="jiujitsu-content">
+            <p class="image">
+                <img  src="resources/img/bjj.jpg" alt="bjj" />
+            </p>
+            <p class="text">
+                <a href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu">Here is some information from wikipedia about Brazilian Jiu Jitsu!</a>
+            </p>
+        </div>
+        <div id="muay-thai-content">
+            <p class="image">
+                <img  src="resources/img/muay-thai.jpg" alt="muay-thai" />
+            </p>
+            <p class="text">
+                <a href="https://en.wikipedia.org/wiki/Muay_Thai">Here is some information from wikipedia about muay thai!</a>
+
+            </p>
+        </div>
+        <div id="karate-content">
+            <p class="image">
+                <img  src="resources/img/karate.jpg" alt="karate" />
+            </p>
+            <p class="text">
+                <a href="https://en.wikipedia.org/wiki/Karate">Here is some information from wikipedia about karate!</a>
+                <br>
+                <br>
+                Karate (空手?) (English /kəˈrɑːtiː/; Japanese pronunciation: [kaɽate] ( listen); Okinawan pronunciation: IPA: [kaɽati]) is a martial art developed in the Ryukyu Kingdom. It developed from the indigenous martial arts of Ryukyu Islands (called te (手?), "hand"; tii in Okinawan) under the influence of Chinese martial arts, particularly Fujian White Crane.[1][2] Karate is now predominantly a striking art using punching, kicking, knee strikes, elbow strikes and open-hand techniques such as knife-hands, spear-hands, and palm-heel strikes. Historically, and in some modern styles, grappling, throws, joint locks, restraints, and vital-point strikes are also taught.[3] A karate practitioner is called a karateka (空手家?).
+                <br>
+                <br>
+                Karate developed on the Ryukyu Islands in what is now Okinawa, Japan. It was brought to the Japanese mainland in the early 20th century during a time of cultural exchanges between the Japanese and the Chinese. It was systematically taught in Japan after the Taishō era.[4] In 1922 the Japanese Ministry of Education invited Gichin Funakoshi to Tokyo to give a karate demonstration. In 1924 Keio University established the first university karate club in mainland Japan and by 1932, major Japanese universities had karate clubs.[5] In this era of escalating Japanese militarism,[6] the name was changed from 唐手 ("Chinese hand" or "Tang hand")[7] to 空手 ("empty hand") – both of which are pronounced karate – to indicate that the Japanese wished to develop the combat form in Japanese style.[8] After World War II, Okinawa became an important United States military site and karate became popular among servicemen stationed there.[9]
+                <br>
+                <br>
+                The martial arts movies of the 1960s and 1970s served to greatly increase the popularity of martial arts around the world, and in English the word karate began to be used in a generic way to refer to all striking-based Oriental martial arts.[10] Karate schools began appearing across the world, catering to those with casual interest as well as those seeking a deeper study of the art.
+                <br>
+                <br>
+                Shigeru Egami, Chief Instructor of Shotokan Dojo, opined that "the majority of followers of karate in overseas countries pursue karate only for its fighting techniques ... Movies and television ... depict karate as a mysterious way of fighting capable of causing death or injury with a single blow ... the mass media present a pseudo art far from the real thing."[11] Shōshin Nagamine said, "Karate may be considered as the conflict within oneself or as a life-long marathon which can be won only through self-discipline, hard training and one's own creative efforts."[12]
+                <br>
+                <br>
+                On September 28, 2015, karate was featured on a shortlist along with baseball, softball, skateboarding, surfing, and sport climbing to be considered for inclusion in the 2020 Summer Olympics. On June 1, 2016, the International Olympic Committee's executive board announced they were supporting the inclusion of all five sports (counting baseball and softball as only one sport) for inclusion in the 2020 Games.
+                <br>
+                <br>
+                Web Japan (sponsored by the Japanese Ministry of Foreign Affairs) claims there are 50 million karate practitioners worldwide,[13] while the World Karate Federation claims there are 100 million practitioners around the world.[14]
+                ~ from Wikipedia
+                <br>
+                <br>
+            </p>
+            <section>
+
+                <img  src="resources/img/karate1.jpg" alt="mma" />
+
+
+            </section>
+
+            <section>
+                <img  src="resources/img/karate2.jpg" alt="mma" />
+            </section>
+        </div>
+        <div id="judo-content">
+            <p class="image">
+                <img  src="resources/img/judo.jpg" alt="judo" />
+            </p>
+            <p class="text">
+                <a href="https://en.wikipedia.org/wiki/Judo">Here is some information from wikipedia about judo!</a>
+
+            </p>
+        </div>
+        <div id="wrestling-content">
+            <p class="image">
+                <img  src="resources/img/wrestling.jpg" alt="wrestling" />
+            </p>
+            <p class="text">
+                <a href="https://en.wikipedia.org/wiki/Wrestling">Here is some information from wikipedia about wrestling!</a>
+
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
 </html>

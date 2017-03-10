@@ -1,28 +1,15 @@
-@keyframes show-sidebar {
-    0% { opacity: 0; }
-    15% { opacity: 0.2; }
-    35% { opacity: 0.4; }
-    55% { opacity: 0.6; }
-    75% { opacity: 0.8; }
-    100%
-    {
-        opacity: 1;
-        display: block;
-    }
-}
-@keyframes hide-sidebar {
-    0% { opacity: 1; }
-    15% { opacity: 0.8; }
-    35% { opacity: 0.6; }
-    55% { opacity: 0.4; }
-    75% { opacity: 0.2; }
-    100%
-    {
-        opacity: 0;
-        display: none;
-    }
-}
+
 @media screen and (max-width: 579px) {
+
+    section {
+
+        margin-left: 20%;
+        padding: 0 4px .5em;
+        display: inline;
+
+        max-height: 75px;
+        max-width: 75px;
+    }
 body {
 
     padding: 0;
@@ -96,12 +83,25 @@ div#sidebar div#footer {
 
     text-shadow: none;
 }
+    div#sidebar div#footer p{
+     display: none;
+    }
 div#content p.image {
    display: none;
 }
 
 
+
     div#content p.text {
+        padding: 0;
+        margin-left: 31%;
+        margin-right: 1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 76%;
+        text-align: justify;
+    }
+    div#content p.text p {
         padding: 0;
         margin-left: 31%;
         margin-right: 1%;
@@ -226,8 +226,54 @@ div#body div#content {
     div#content div#about-mma-content {
         display: block;
     }
+    section {
+
+        margin: 2%;
+        padding: 0 4px .5em;
+        display: inline-flex;
+
+        max-height: 150px;
+        max-width: 150px;
+        margin-left: 20%;
+
+
+    }
+
 }
 
 
 
 
+@keyframes show-sidebar {
+    0% { opacity: 0; }
+    15% { opacity: 0.2; }
+    35% { opacity: 0.4; }
+    55% { opacity: 0.6; }
+    75% { opacity: 0.8; }
+    100%
+    {
+        opacity: 1;
+        display: block;
+    }
+}
+@keyframes hide-sidebar {
+    0% { opacity: 1; }
+    15% { opacity: 0.8; }
+    35% { opacity: 0.6; }
+    55% { opacity: 0.4; }
+    75% { opacity: 0.2; }
+    100%
+    {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 700px) {
+    section {
+        margin-left: 20%;
+    }
+
+}

@@ -1,33 +1,33 @@
 
-var delayTime = 900; // tu zawsze o 100ms mniej ni w CSS
+var delayTime = 900; // always less by 100ms than in CSS, used for helper functions to not repeat code
 
-function hideElement(ele) {
+function hideElement(ele) { //helper function to change content function
     setTimeout(function() {
-        ele.style.display = "none";
+        ele.style.display = "none"; //changes style lement in css display: none;
     }, delayTime);
 }
 
-function showElement(ele) {
+function showElement(ele) { //helper function to change content function
     setTimeout(function() {
-        ele.style.display = "block";
+        ele.style.display = "block"; //changes style lement in css display: block;
     }, delayTime);
 }
 
 
 function changeContent(option) {
     var contentChildrens = document.getElementById("content").getElementsByTagName("div");
-    var hideTime = "1s"; // CSS czas
-    var showTime = hideTime;
+    var hideTime = "1s"; // var to set animation duration in CSS
+    var showTime = hideTime; // same as above but for showing content
     var hideAnimation = "hide-sidebar";
     var showAnimation = "show-sidebar";
 
-    for(var i = 0; i < contentChildrens.length; i++) {
+    for(var i = 0; i < contentChildrens.length; i++) { //for loop that goes through all of the elements in div with id content and then through divs in it
         hideElement(contentChildrens[i]);
         contentChildrens[i].style.animationDuration = hideTime;
         contentChildrens[i].style.animationName = hideAnimation;
     }
 
-    if(option == "about-mma") {
+    if(option == "about-mma") { //if statement to change content, according to option chosen in the menu
         showElement(document.getElementById("about-mma-content"));
         document.getElementById("about-mma-content").style.animationDuration = showTime;
         document.getElementById("about-mma-content").style.animationName = showAnimation;
@@ -62,5 +62,7 @@ function changeContent(option) {
         document.getElementById("wrestling-content").style.animationDuration = showTime;
         document.getElementById("wrestling-content").style.animationName = showAnimation;
     }
+
 }
+
 
