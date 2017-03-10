@@ -92,24 +92,17 @@ div#content p.image {
 
 
 
+
     div#content p.text {
         padding: 0;
         margin-left: 31%;
-        margin-right: 1%;
+        margin-right: 10%;
         margin-top: 10px;
         margin-bottom: 10px;
         width: 76%;
         text-align: justify;
     }
-    div#content p.text p {
-        padding: 0;
-        margin-left: 31%;
-        margin-right: 1%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 76%;
-        text-align: justify;
-    }
+
 }
 
 
