@@ -1,4 +1,4 @@
-
+@media screen and (max-width: 580px) {
 body {
 
     padding: 0;
@@ -88,8 +88,17 @@ div#sidebar div#footer {
 
     text-shadow: none;
 }
+div#content p.image {
+   display: none;
+}
+
+}
+
+
 
 @media screen and (min-width: 580px) {
+
+
 body {
 
         padding: 0;
@@ -159,6 +168,7 @@ div#sidebar div#header {
 }
 
 div#sidebar nav#menu {
+
     margin-right: 5px;
     margin-top: 10px;
     margin-bottom: 10px;

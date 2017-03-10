@@ -13,6 +13,7 @@ function showElement(ele) {
     }, delayTime);
 }
 
+
 function changeContent(option) {
     var contentChildrens = document.getElementById("content").getElementsByTagName("div");
     var hideTime = "1s"; // CSS czas
@@ -61,4 +62,5 @@ function changeContent(option) {
         document.getElementById("wrestling-content").style.animationDuration = showTime;
         document.getElementById("wrestling-content").style.animationName = showAnimation;
     }
-};
+}
+
